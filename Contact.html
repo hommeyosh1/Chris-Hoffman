@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Hoffman | Game Developer & Web Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init({
+                publicKey: "K3v72bw73aF1LRMdC",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="ezma.png" alt="Logo" class="header-logo">
+        <nav>
+            <h1>Christopher Hoffman</h1>
+            <h1 class="subtitle">The</h1>
+            <h1 class="subtitle">Hommeyosh</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="doc.html">Resume</a></li>
+                <li><a href="download.html">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="response-message"></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Mindys Vintage Toys N Video Games</p>
+    </footer>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.send("service_jtzvxcs", "template_wdiy9ul", {
+                name: document.getElementById("name").value,
+                phone: document.getElementById("phone").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            }).then(
+                function(response) {
+                    document.getElementById("response-message").innerText = "Message sent successfully!";
+                },
+                function(error) {
+                    document.getElementById("response-message").innerText = "Error sending message. Try again.";
+                }
+            );
+        });
+    </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Christopher Hoffman</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/christopher-hoffman-673339191" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@thehommeyosh8605" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.develteam.com/Developer/Hommeyosh" target="_blank"><i class="fas fa-code"></i></a>
+            <a href="mailto:ch76151@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</body>
+
+</html>
