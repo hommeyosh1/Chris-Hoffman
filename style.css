@@ -113,11 +113,13 @@ header {
 .header-logo {
     width: 125px;
     height: 125px;
-    position: absolute;
-    left: -10px;
-    bottom: 1px;
+    position: relative;   /* changed */
+    left: 0;              /* changed */
+    bottom: 0;            /* changed */
+    margin-right: 10px;   /* added */
     object-fit: contain;
 }
+
 
 nav {
     display: flex;
