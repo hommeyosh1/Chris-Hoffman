@@ -463,6 +463,24 @@ body {
         width: 95%;
         padding: 10px;
     }
+        .header-logo {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin: 10px auto 0 auto;   /* center the cat */
+    }
+
+    nav {
+        align-items: center;
+    }
+
+    nav h1,
+    nav h1.subtitle {
+        width: 100%;
+        text-align: center;
+        margin: 3px 0;
+    }
+
 }
 
 /* Extra small devices (phones in portrait mode) */
