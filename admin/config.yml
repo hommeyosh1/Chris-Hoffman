@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: hommeyosh1/Chris-Hoffman
   branch: main
 
 media_folder: "uploads"
