@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: hommeyosh1/Chris-Hoffman
+  repo: Chris-Hoffman
   branch: main
 
 media_folder: "uploads"
