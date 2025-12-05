@@ -2,8 +2,6 @@ backend:
   name: github
   repo: hommeyosh1/Chris-Hoffman
   branch: main
-  auth_type: implicit
-  app_id: Ov23li7LTYgBBNnjvY94   # ← Your real Client ID goes here
 
 media_folder: "uploads"
 public_folder: "/uploads"
