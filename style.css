@@ -109,14 +109,14 @@ header {
     justify-content: center;
     align-items: center;
 }
-
+/*Ezma logo */
 .header-logo {
     width: 125px;
     height: 125px;
     position: relative;   /* changed */
-    left: 0;              /* changed */
+    left: 1;              /* changed */
     bottom: 0;            /* changed */
-    margin-right: 10px;   /* added */
+    margin-right: 20px;   /* added */
     object-fit: contain;
 }
 
